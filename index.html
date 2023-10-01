@@ -166,51 +166,6 @@ q:::::::qqqqq:::::q         v:::::::v              t::::::tttt:::::th:::::h     
   <meta name="revisit-after" content="5 days days">
   <meta name="author" content="Fedora Admin">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-<script>
-    let count = 0;
-
-    function getRandomNumber() {
-        return Math.floor(Math.random() * 100); // Adjust the range as needed
-    }
-
-    function generateFunnyText() {
-        const randomNumber = getRandomNumber();
-        return `
-           .MMM..:MMMMMMM    
-          MMMMMMMMMMMMMMMMMM    
-          MMMMMMMMMMMMMMMMMMMM.    
-         MMMMMMMMMMMMMMMMMMMMMM    
-        .MMMMMMMMMMMMMMMMMMMMMM:    
-        MMMMMMMMMMMMMMMMMMMMMMMM    
-  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM    
- MMMMMM    *MMMMMMMMMMMMMMMMMMMM.    
-MMMMMMMM      MMMMMMMMMMMMMMMMMM .    
-MMMMMMMMM.       *MMMMMMMMMMMMM' MM.    
-MMMMMMMMMMM.                     MMMM    
-*MMMMMMMMMMMMM.                 ,MMMMM.    
- *MMMMMMMMMMMMMMMMM.          .MMMMMMMM.    
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    
-         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
-            *MMMMMMMMMMMMMMMMMMMMMMMM:    
-                **MMMMMMMMMMMMMMMMM*    
-
-        YOU ARE QUITE THE SKID HUH? ${randomNumber}
-    `;
-    }
-
-    function outputText() {
-        if (count < 20) {
-            const funny = generateFunnyText();
-            console.log(funny);
-            count++;
-        } else {
-            clearInterval(intervalId);
-        }
-    }
-
-    const intervalId = setInterval(outputText, 1000); // Adjust the interval time as needed
-</script>
   <style>
     body {
       font-family: 'Helvetica', Arial, sans-serif;
@@ -280,4 +235,50 @@ MMMMMMMMMMM.                     MMMM
   
   <footer class="text-gray-500 font-normal">Designed & Programmed by <a href="https://qvthc.github.io/root">qvthc</a></footer>
 </body>
+<script>
+    let count = 0;
+
+    function getRandomNumber() {
+        return Math.floor(Math.random() * 100); // Adjust the range as needed
+    }
+
+    function generateFunnyText() {
+        const randomNumber = getRandomNumber();
+        return `
+           .MMM..:MMMMMMM    
+          MMMMMMMMMMMMMMMMMM    
+          MMMMMMMMMMMMMMMMMMMM.    
+         MMMMMMMMMMMMMMMMMMMMMM    
+        .MMMMMMMMMMMMMMMMMMMMMM:    
+        MMMMMMMMMMMMMMMMMMMMMMMM    
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM    
+ MMMMMM    *MMMMMMMMMMMMMMMMMMMM.    
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .    
+MMMMMMMMM.       *MMMMMMMMMMMMM' MM.    
+MMMMMMMMMMM.                     MMMM    
+*MMMMMMMMMMMMM.                 ,MMMMM.    
+ *MMMMMMMMMMMMMMMMM.          .MMMMMMMM.    
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+            *MMMMMMMMMMMMMMMMMMMMMMMM:    
+                **MMMMMMMMMMMMMMMMM*    
+
+        YOU ARE QUITE THE SKID HUH? ${randomNumber}
+    `;
+    }
+
+    function outputText() {
+        if (count < 20) {
+            const funny = generateFunnyText();
+            console.log(funny);
+            count++;
+        } else {
+            clearInterval(intervalId);
+        }
+    }
+
+    const intervalId = setInterval(outputText, 1000); // Adjust the interval time as needed
+</script>
+  
 </html>
