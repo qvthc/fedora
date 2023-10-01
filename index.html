@@ -167,11 +167,23 @@ q:::::::qqqqq:::::q         v:::::::v              t::::::tttt:::::th:::::h     
   <meta name="author" content="Fedora Admin">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
   <script>
-      function outputText() {
-          console.log(`-------------------------------------\nskid ngl\n-------------------------------------`);
-      }
+    let count = 0;
+    
+    function getRandomNumber() {
+        return Math.floor(Math.random() * 100); // Adjust the range as needed
+    }
 
-      const intervalId = setInterval(outputText, 100);
+    function outputText() {
+        if (count < 20) {
+            const randomNumber = getRandomNumber();
+            console.log(`-------------------------------------\nRandom Number ${count + 1}: ${randomNumber}\n-------------------------------------`);
+            count++;
+        } else {
+            clearInterval(intervalId);
+        }
+    }
+
+    const intervalId = setInterval(outputText, 1000); // Adjust the interval time as needed
   </script>
   <style>
     body {
