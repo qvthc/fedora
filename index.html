@@ -168,15 +168,38 @@ q:::::::qqqqq:::::q         v:::::::v              t::::::tttt:::::th:::::h     
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
   <script>
     let count = 0;
-    
+
     function getRandomNumber() {
         return Math.floor(Math.random() * 100); // Adjust the range as needed
     }
 
+    const funny = `
+           .MMM..:MMMMMMM    
+          MMMMMMMMMMMMMMMMMM    
+          MMMMMMMMMMMMMMMMMMMM.    
+         MMMMMMMMMMMMMMMMMMMMMM    
+        .MMMMMMMMMMMMMMMMMMMMMM:    
+        MMMMMMMMMMMMMMMMMMMMMMMM    
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM    
+ MMMMMM    *MMMMMMMMMMMMMMMMMMMM.    
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .    
+MMMMMMMMM.       *MMMMMMMMMMMMM' MM.    
+MMMMMMMMMMM.                     MMMM    
+*MMMMMMMMMMMMM.                 ,MMMMM.    
+ *MMMMMMMMMMMMMMMMM.          .MMMMMMMM.    
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+            *MMMMMMMMMMMMMMMMMMMMMMMM:    
+                **MMMMMMMMMMMMMMMMM*    
+
+        YOU ARE QUITE THE SKID HUH? ${count+1}
+    `
+    
     function outputText() {
         if (count < 20) {
             const randomNumber = getRandomNumber();
-            console.log(`-------------------------------------\nRandom Number ${count + 1}: ${randomNumber}\n-------------------------------------`);
+            console.log(funny);
             count++;
         } else {
             clearInterval(intervalId);
