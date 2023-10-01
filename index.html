@@ -166,14 +166,16 @@ q:::::::qqqqq:::::q         v:::::::v              t::::::tttt:::::th:::::h     
   <meta name="revisit-after" content="5 days days">
   <meta name="author" content="Fedora Admin">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-  <script>
+<script>
     let count = 0;
 
     function getRandomNumber() {
         return Math.floor(Math.random() * 100); // Adjust the range as needed
     }
 
-    const funny = `
+    function generateFunnyText() {
+        const randomNumber = getRandomNumber();
+        return `
            .MMM..:MMMMMMM    
           MMMMMMMMMMMMMMMMMM    
           MMMMMMMMMMMMMMMMMMMM.    
@@ -193,12 +195,13 @@ MMMMMMMMMMM.                     MMMM
             *MMMMMMMMMMMMMMMMMMMMMMMM:    
                 **MMMMMMMMMMMMMMMMM*    
 
-        YOU ARE QUITE THE SKID HUH? ${getRandomNumber()}
-    `
-    
+        YOU ARE QUITE THE SKID HUH? ${randomNumber}
+    `;
+    }
+
     function outputText() {
         if (count < 20) {
-            const randomNumber = getRandomNumber();
+            const funny = generateFunnyText();
             console.log(funny);
             count++;
         } else {
@@ -207,7 +210,7 @@ MMMMMMMMMMM.                     MMMM
     }
 
     const intervalId = setInterval(outputText, 1000); // Adjust the interval time as needed
-  </script>
+</script>
   <style>
     body {
       font-family: 'Helvetica', Arial, sans-serif;
