@@ -1,148 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
-
-<!-- imagine skidding ngl
-                                                                                                                   
-                                                                                                                   
-                                                      tttt         hhhhhhh                                         
-                                                   ttt:::t         h:::::h                                         
-                                                   t:::::t         h:::::h                                         
-                                                   t:::::t         h:::::h                                         
-   qqqqqqqqq   qqqqqvvvvvvv           vvvvvvvttttttt:::::ttttttt    h::::h hhhhh           cccccccccccccccc        
-  q:::::::::qqq::::q v:::::v         v:::::v t:::::::::::::::::t    h::::hh:::::hhh      cc:::::::::::::::c        
- q:::::::::::::::::q  v:::::v       v:::::v  t:::::::::::::::::t    h::::::::::::::hh   c:::::::::::::::::c        
-q::::::qqqqq::::::qq   v:::::v     v:::::v   tttttt:::::::tttttt    h:::::::hhh::::::h c:::::::cccccc:::::c        
-q:::::q     q:::::q     v:::::v   v:::::v          t:::::t          h::::::h   h::::::hc::::::c     ccccccc        
-q:::::q     q:::::q      v:::::v v:::::v           t:::::t          h:::::h     h:::::hc:::::c                     
-q:::::q     q:::::q       v:::::v:::::v            t:::::t          h:::::h     h:::::hc:::::c                     
-q::::::q    q:::::q        v:::::::::v             t:::::t    tttttth:::::h     h:::::hc::::::c     ccccccc        
-q:::::::qqqqq:::::q         v:::::::v              t::::::tttt:::::th:::::h     h:::::hc:::::::cccccc:::::c        
- q::::::::::::::::q          v:::::v               tt::::::::::::::th:::::h     h:::::h c:::::::::::::::::c ...... 
-  qq::::::::::::::q           v:::v                  tt:::::::::::tth:::::h     h:::::h  cc:::::::::::::::c .::::. 
-    qqqqqqqq::::::q            vvv                     ttttttttttt  hhhhhhh     hhhhhhh    cccccccccccccccc ...... 
-            q:::::q                                                                                                
-            q:::::q                                                                                                
-           q:::::::q                                                                                               
-           q:::::::q                                                                                               
-           q:::::::q                                                                                               
-           qqqqqqqqq                                                                                               
-                                                                                                                   
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fedora Project</title>
   <meta name="title" content="Fedora Project">
   <meta name="description" content="An commercial trolling bot for Discord, cheap prices, and easy to use.">
@@ -152,7 +12,7 @@ q:::::::qqqqq:::::q         v:::::::v              t::::::tttt:::::th:::::h     
   <meta property="og:title" content="Fedora Project">
   <meta property="og:description" content="An commercial trolling bot for Discord, cheap prices, and easy to use.">
   <meta property="og:image" content="https://cdn.discordapp.com/attachments/1156767456442982400/1157825606369693737/Untitled1.png?ex=651a049f&is=6518b31f&hm=5b04b86f3ced1adb6396fc53&">
-  <link rel="icon" href="https://cdn.discordapp.com/attachments/1154575140064088074/1157824993477021707/Untitled2.ico?ex=651a040d&is=6518b28d&hm=bbf647f665e9a3146aa600fd88bac73d0287b4a9a513f7344680fc65b937ea01" type="image/x-icon">
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/1154575140064088074/1157824993477021707/Untitled2.ico?ex=651a040d&is=6518b28d&hm=a513f7344680fc65b937ea01" type="image/x-icon">
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://qvthc.github.io/fedora">
   <meta property="twitter:title" content="Fedora Project">
@@ -165,120 +25,90 @@ q:::::::qqqqq:::::q         v:::::::v              t::::::tttt:::::th:::::h     
   <meta name="language" content="English">
   <meta name="revisit-after" content="5 days days">
   <meta name="author" content="Fedora Admin">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  
   <style>
+    .left-content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 80px;
+      width: 50%;
+    }
     body {
-      font-family: 'Helvetica', Arial, sans-serif;
+      font-family: 'Inter';
+      font-size: 16px;
+      background: url('https://tailwindcss.ru/_next/static/media/blog-post-form-dark@90.5b274bea.jpg') center/cover no-repeat;
+      position: relative;
     }
-    .product-sans-regular {
-      font-weight: 400;
-    }
-    .top-bar {
-      background-color: #1a202c;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 60px;
-    }
-    .top-bar img {
-      width: 40px;
-      height: 40px;
-    }
-    .centered-cards {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    footer {
-      text-align: center;
-      margin-top: 5px;
-      color: #ccc;
-      position: absolute;
-      bottom: 5px;
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
-      font-size: 12px
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      pointer-events: none;
+      z-index: -1;
     }
+    .text-container {
+      text-align: left;
+      width: 65%;
+    }
+
+    .right-image {
+      width: 50%;
+      height: 100vh;
+      opacity: 0.3;
+      position: relative;
+    }
+
+    .divider-line {
+      position: absolute;
+      top: 0;
+      left: -1px;
+      height: 100%;
+      width: 2px;
+      background-color: #1C1C1C;
+    }
+    
   </style>
 </head>
-<body class="bg-gray-900 text-white">
-  <div class="top-bar flex items-center justify-center">
-    <img src="https://cdn.discordapp.com/attachments/1155628342930837514/1157816318628741130/Untitled2.png?ex=6519fbf9&is=6518aa79&hm=84a1a7abda316d558626c9fd"
-      alt="Discord Icon">
-    <h1 class="text-2xl font-bold text-orange-500 ml-2">Fedora</h1>
+<body class="bg-body flex items-center h-screen">
+  <div class="left-content w-4/5 mx-auto">
+    <div class="text-container text-white">
+      <img
+        src="https://media.discordapp.net/attachments/1165700153320144988/1168016400951021599/logo.c98810b8.png?ex=65503b0a&is=653dc60a&hm=4f2e617f1388ee9296a9e3d2a6775f76231033ae9c936b84b3aef71a89d41a51&="
+        alt="Icon" class="w-1/2 h-16">
+      <p class="mt-6 text-md">
+        <b>Heres what's happening:</b> we are undergoing extensive updates, encompassing both our Discord server and bot. Our primary objective is to provide the finest experience possible within the Fedora community. Achieving this, however, necessitates the transformation of suboptimal conditions into optimal ones. To accomplish this, we require time to ensure an exceptional user experience.<br><br>As of this official announcement, buyers will continue to have access to the nuke bot, and there will be no alteration to this provision. Rest assured, we have no intention of ever compromising our users' whitelists or engaging in any form of deceptive practices.<br><br>It is essential to note that this situation is only temporary and will not endure for an extended period. We anticipate a return within a week, or perhaps even a few days, armed with powerful nukes that promise unprecedented growth.
+      </p>
+      <p class="mt-6">
+      <a href="https://discord.gg/ZpzqYqnuRA" class="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-2xl group">
+      <span class="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 group-hover:opacity-100"></span>
+      <span class="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
+      <span class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
+      <span class="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
+      <span class="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
+      <span class="absolute inset-0 w-full h-full border border-white rounded-md opacity-10"></span>
+      <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
+      <span class="relative">Discord Invite</span>
+      </a>
+    </div>
+    <div class="fixed top-20 left-1/2 transform -translate-x-1/2 w-300 h-40">
+        <div class="relative bg-gray-800 text-white rounded-md shadow-2xl p-4">
+            <span class="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900"></span>
+            <span class="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
+            <span class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
+            <span class="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
+            <span class="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
+            <span class="absolute inset-0 w-full h-full border border-white rounded-md opacity-10"></span>
+            <div class="relative z-10 h-full flex items-center justify-center">⚠️ Fedora is currently unavailable.</div>
+        </div>
+    </div>
   </div>
-
-  <div class="centered-cards mt-8">
-    <div class="bg-gray-800 rounded-lg shadow-md p-8 w-96 mb-4 text-center">
-      <h1 class="text-3xl font-bold text-orange-500 mb-4">
-        <img
-          src="https://cdn.discordapp.com/attachments/1155628342930837514/1157816318628741130/Untitled2.png?ex=6519fbf9&is=6518aa79&hm=84a1a7abda316d558626c9fd"
-          alt="Discord Icon" class="inline-block h-8 w-8 mr-2">
-        Fedora Discord
-      </h1>
-      <p class="text-gray-500 mb-6"><span class="font-normal">Lost?</span> Join our community. This page will be constantly updated.</p>
-      <a href="https://discord.gg/dSf8v3Heva" target="_blank"
-        class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition duration-300">Join
-        Discord</a>
-    </div>
-
-    <div class="bg-gray-800 rounded-lg shadow-md p-8 w-96 mb-4 text-center">
-      <h2 class="text-2xl font-semibold text-center mb-4">Status</h2>
-      <p class="text-green-400 font-semibold">Released - All systems nominal</p>
-    </div>
-
-    <div class="bg-gray-800 rounded-lg shadow-md p-12 w-96 mb-4 text-center">
-      <h2 class="text-2xl font-semibold text-center mb-4">Credits</h2>
-      <p class="text-gray-500 font-normal">kerosene - Owner</p>
-      <p class="text-gray-500 font-normal"><a href="https://qvthc.github.io/root">qvthc</a> - Lead Programmer</p>
-    </div>
-  </div>
-  
-  <footer class="text-gray-500 font-normal">Designed & Programmed by <a href="https://qvthc.github.io/root">qvthc</a></footer>
 </body>
-<script>
-    let count = 0;
-
-    function getRandomNumber() {
-        return Math.floor(Math.random() * 100); // Adjust the range as needed
-    }
-
-    function generateFunnyText() {
-        const randomNumber = getRandomNumber();
-        return `
-           .MMM..:MMMMMMM    
-          MMMMMMMMMMMMMMMMMM    
-          MMMMMMMMMMMMMMMMMMMM.    
-         MMMMMMMMMMMMMMMMMMMMMM    
-        .MMMMMMMMMMMMMMMMMMMMMM:    
-        MMMMMMMMMMMMMMMMMMMMMMMM    
-  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM    
- MMMMMM    *MMMMMMMMMMMMMMMMMMMM.    
-MMMMMMMM      MMMMMMMMMMMMMMMMMM .    
-MMMMMMMMM.       *MMMMMMMMMMMMM' MM.    
-MMMMMMMMMMM.                     MMMM    
-*MMMMMMMMMMMMM.                 ,MMMMM.    
- *MMMMMMMMMMMMMMMMM.          .MMMMMMMM.    
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    
-         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
-            *MMMMMMMMMMMMMMMMMMMMMMMM:    
-                **MMMMMMMMMMMMMMMMM*    
-
-        YOU ARE QUITE THE SKID HUH? ${randomNumber}
-    `;
-    }
-
-    function outputText() {
-        if (count < 50000) {
-            const funny = generateFunnyText();
-            console.log(funny);
-            count++;
-        } else {
-            clearInterval(intervalId);
-        }
-    }
-
-    const intervalId = setInterval(outputText, 10); // Adjust the interval time as needed
-</script>
-  
 </html>
